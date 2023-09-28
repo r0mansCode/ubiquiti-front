@@ -30,6 +30,7 @@ export default App;
 // TODO:
 // *lazy import for code splitting and script loading state
 // *create a fallback for error handling
+// *additional data check for potential errors
 // *optimise components with memo
 // *create not found page
 // *create error page
