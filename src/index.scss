@@ -1,0 +1,35 @@
+body {
+  box-sizing: border-box;
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0.65);
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+input {
+  background-color: rgba(246, 246, 248, 1);
+  border: none;
+  padding: 0;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+@font-face {
+  font-family: "Lato";
+  src:
+    local("Lato"),
+    url(./assets/fonts/Lato-Regular.ttf) format("woff");
+}
