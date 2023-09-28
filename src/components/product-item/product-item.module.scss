@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .itemContainer {
   width: 231px;
   border-radius: 8px;
@@ -23,11 +25,11 @@
 }
 
 .productName {
-  color: rgba(0, 0, 0, 0.65);
+  color: var(--primaryFont);
 }
 
 .lineName {
   font-size: 0.75rem;
   line-height: 1.25rem;
-  color: rgba(0, 0, 0, 0.45);
+  color: var(--secondaryFont);
 }

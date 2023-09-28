@@ -37,6 +37,7 @@ export const SVGIcon = ({
   return (
     <img
       src={icons[iconName]}
+      alt={icons[iconName]}
       className={className}
       onClick={onClick}
       style={style}

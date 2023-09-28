@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .deviceContainer {
   width: 100vw;
   height: calc(100vh - 103px); //deducting height of the headers
@@ -37,7 +39,7 @@
 }
 
 .singleDeviceTitle {
-  color: rgba(0, 0, 0, 0.45);
+  color: var(--secondaryFont);
 }
 
 .singleDeviceBackIcon {

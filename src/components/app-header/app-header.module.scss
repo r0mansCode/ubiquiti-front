@@ -1,8 +1,10 @@
+@import "../../variables.scss";
+
 .headerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(246, 246, 248, 1);
+  background-color: var(--secondaryBackground);
 }
 
 .logoSection {

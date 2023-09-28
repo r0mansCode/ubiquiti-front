@@ -41,7 +41,7 @@ export const LazyImage = ({ id, resolution }: LazyImageProps) => {
   return (
     <img
       src={isIntersecting ? imageSrc : ""}
-      alt='product'
+      alt='device'
       width={width}
       height={height}
       ref={imgRef}

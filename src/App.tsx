@@ -34,3 +34,4 @@ export default App;
 // *create not found page
 // *create error page
 // *create loading visualisation
+// *add onClick for /device title to copy link to clipboard

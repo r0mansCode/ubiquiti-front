@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .tableContainer {
   max-height: calc(100vh - 150px);
   overflow-y: scroll;
@@ -28,7 +30,7 @@ thead {
     content: " ";
     position: absolute;
     width: calc(100% + 32px);
-    border-top: 1px solid rgba(237, 237, 240, 1);
+    border-top: 1px solid var(--primaryBorderColor);
   }
 
   th:not(:nth-child(1)) {
@@ -41,7 +43,7 @@ tr {
   cursor: pointer;
 
   &:hover {
-    background-color: rgba(237, 237, 240, 1);
+    background-color: var(--hoverBackground);
   }
 }
 
@@ -49,7 +51,7 @@ td,
 th {
   white-space: nowrap;
   text-align: left;
-  color: rgba(0, 0, 0, 0.65);
+  color: var(--primaryFont);
   font-weight: 400;
 
   &:nth-child(1) {
@@ -61,7 +63,7 @@ th {
 
 td {
   text-transform: capitalize;
-  border-bottom: 1px solid rgba(237, 237, 240, 1);
+  border-bottom: 1px solid var(--primaryBorderColor);
 }
 
 .thDevices {
@@ -104,7 +106,7 @@ td {
 @media (max-width: 450px) {
   .nameCell {
     overflow: hidden;
-    max-width: 150px;
+    max-width: 130px;
     text-overflow: ellipsis;
   }
 }
