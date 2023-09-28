@@ -7,13 +7,23 @@ import { Layouts } from "../../constants/constants";
 
 export const DevicesPage = () => {
   const { filteredItems } = useFilterHook();
-  const { layout } = useAppSelector((state) => state.dataReducer);
+  const { layout, isLoading, error } = useAppSelector(
+    (state) => state.dataReducer
+  );
+
+  const canRender = !isLoading && !error;
 
   return (
     <div>
       <Toolbar />
-      {layout === Layouts.LIST && <TableList items={filteredItems} />}
-      {layout === Layouts.GRID && <TableGrid items={filteredItems} />}
+      {error && <h1>Oooops, something wrong with the data...</h1>}
+      {isLoading && <h1>...Loading</h1>}
+      {layout === Layouts.LIST && canRender && (
+        <TableList items={filteredItems} />
+      )}
+      {layout === Layouts.GRID && canRender && (
+        <TableGrid items={filteredItems} />
+      )}
     </div>
   );
 };
