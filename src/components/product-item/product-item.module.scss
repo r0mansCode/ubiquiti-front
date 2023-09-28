@@ -1,0 +1,33 @@
+.itemContainer {
+  width: 231px;
+  border-radius: 8px;
+  border: 1px solid #dbdce1;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f8;
+  padding-block: 11px;
+  border-radius: 8px 8px 0 0;
+  min-height: 101px;
+}
+
+.nameContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 12px;
+}
+
+.productName {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.lineName {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: rgba(0, 0, 0, 0.45);
+}

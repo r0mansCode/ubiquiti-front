@@ -1,0 +1,28 @@
+.container {
+  max-width: 100%;
+  max-height: calc(100vh - 150px);
+  overflow-y: scroll;
+  padding: 10px 24px 24px;
+}
+
+.subContainer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.productItem {
+  cursor: pointer;
+  transition-duration: 200ms;
+  &:hover {
+    box-shadow: 0px 12px 48px 0px rgba(0, 0, 0, 0.15);
+    transition-duration: 200ms;
+  }
+}
+
+.itemsCount {
+  padding: 0 0 10px 24px;
+  color: #bdbdbd;
+}

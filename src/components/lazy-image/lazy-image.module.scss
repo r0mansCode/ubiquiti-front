@@ -1,0 +1,8 @@
+.imgHidden {
+  opacity: 0;
+}
+
+.imgShown {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}

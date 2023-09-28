@@ -1,0 +1,65 @@
+.toolbarContainer {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 28px 8px 30px;
+  border-bottom: 1px solid rgba(237, 237, 240, 1);
+}
+
+.toolbarSecondSec {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  & > * {
+    cursor: pointer;
+  }
+}
+
+.toolbarFirstSec {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 8px;
+}
+
+.closeIcon {
+  position: absolute;
+  right: 8px;
+  cursor: pointer;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+
+  &:hover {
+    scale: 1.25;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+.filterOpener {
+  cursor: pointer;
+}
+
+.searchInput {
+  text-indent: 32px;
+  width: 344px;
+  height: 32px;
+}
+
+.listIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+}
+
+@media (max-width: 550px) {
+  .searchInput {
+    width: 240px;
+  }
+}
